@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Oswald:wght@200..700&family=PT+Serif&display=swap");
+
+.data-align {
+  text-align: start;
+  font-family: "PT Serif", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.buttonContainer {
+  color: rgb(235, 23, 23);
+  cursor: pointer;
+}
+.dataContainer {
+  background: rgb(103, 128, 225, 0.7);
+}
+.dataContainer:nth-child(odd) {
+  background-color: rgb(103, 128, 225, 0.9);
+}
+@media only screen and (max-width: 600px) {
+  .dataContainer {
+    width: 100% !important;
+  }
+}

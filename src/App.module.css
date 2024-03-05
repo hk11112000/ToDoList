@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+  overflow-y: auto;
+  min-height: 60vh;
+  max-height: 60vh;
+  padding: 20px 10px 10px 10px;
+  background: white;
+}
+@media only screen and (max-width: 600px) {
+  .mainContainer {
+    width: 80vw;
+  }
+}

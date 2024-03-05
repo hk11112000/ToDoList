@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Oswald:wght@200..700&family=PT+Serif&display=swap");
+.welContainer {
+  text-align: center;
+  padding: 0 0 10px 0;
+  height: 55px;
+  font-family: "PT Serif", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: clamp(8px, 7vw, 20px);
+  color: rgb(103, 128, 225, 1);
+}
+.welImage {
+  margin: auto;
+  padding: 0 0 10px 0;
+  height: 55px;
+  mix-blend-mode: multiply;
+}

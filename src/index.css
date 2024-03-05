@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(103, 128, 225, 1);
+}
+::-webkit-scrollbar {
+  width: 5px;
+  scrollbar-width: none;
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: red;
+  /* border-radius: 5px; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  /* border-radius: 5px; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}

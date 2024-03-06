@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import Data from "./Data";
+import { TodoItemsContext } from "../store/todo-items-store";
 
-function ToDoItems({ todoI, deleteItem }) {
+function ToDoItems() {
+  
+  const {itemList} = useContext(TodoItemsContext)
+
+
+  
   return (
     <>
-      {todoI.map((item, index) => (
+      {itemList.map((item, index) => (
         <Data
           key={index}
           toDoItem={item.todo}
           toDoDate={item.todate}
-          deleteToDoItem={deleteItem}
         />
       ))}
     </>

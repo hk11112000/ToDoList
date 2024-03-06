@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import StyleData from "./Data.module.css";
+import { TodoItemsContext } from "../store/todo-items-store";
 
-function Data({ toDoItem, toDoDate, deleteToDoItem }) {
+function Data({ toDoItem, toDoDate}) {
+  const {deleteItem} = useContext(TodoItemsContext)
+  
   return (
     <>
       <div
@@ -19,7 +22,7 @@ function Data({ toDoItem, toDoDate, deleteToDoItem }) {
         </div>
         <i
           className={`${StyleData["buttonContainer"]} bi bi-trash3-fill`}
-          onClick={deleteToDoItem}
+          onClick={deleteItem}
         ></i>
       </div>
     </>

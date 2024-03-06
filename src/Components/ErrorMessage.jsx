@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import errMsg from "./ErrorMessage.module.css";
+import { TodoItemsContext } from "../store/todo-items-store";
 
-function ErrorMessage({ toDoItems }) {
+function ErrorMessage() {
+  const {itemList} = useContext(TodoItemsContext)
+  
+  
   return (
     <>
-      {toDoItems.length === 0 ? (
+      {itemList.length === 0 ? (
         <img
           src="./NoData.jpg"
           alt=""
